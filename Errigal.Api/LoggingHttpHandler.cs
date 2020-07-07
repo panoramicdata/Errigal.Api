@@ -42,16 +42,17 @@ namespace Errigal.Api
 					.Content
 					.ReadAsStringAsync()
 					.ConfigureAwait(false);
-				throw new ErrigalApiException(responseBody);
+				throw new ErrigalApiException(response.StatusCode, responseBody);
 			}
-			catch (ErrigalApiException)
+			catch (ErrigalApiException exception)
 			{
+				_logger.LogInformation(exception, exception.Message);
 				throw;
 			}
 			catch (Exception exception)
 			{
 				_logger.LogError(exception, exception.Message);
-				throw;
+				throw new ErrigalApiException("Unexpected error", exception);
 			}
 			finally
 			{
