@@ -3,7 +3,6 @@ using System.Runtime.Serialization;
 
 namespace Errigal.Api.Data.Ticketer
 {
-
 	[DataContract]
 	public class PortService : IdentifiedItem
 	{
