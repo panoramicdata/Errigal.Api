@@ -12,10 +12,11 @@
 		<PackageProjectUrl>https://github.com/panoramicdata/Errigal.Api</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/panoramicdata/Errigal.Api</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<PackageTags>Erigal, API</PackageTags>
-		<PackageReleaseNotes>Initial alpha release</PackageReleaseNotes>
+		<PackageTags>Errigal, API</PackageTags>
 		<PackageIcon>Icon.png</PackageIcon>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+		<PackageReleaseNotes>Initial alpha release</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
