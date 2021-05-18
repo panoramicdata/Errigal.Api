@@ -6,24 +6,24 @@ namespace Errigal.Api.Data.Ticketer
 	public class TicketResponse
 	{
 		[DataMember(Name = "ticketId")]
-		public string TicketId { get; set; } = null!;
+		public string TicketId { get; set; } = string.Empty;
 
 		[DataMember(Name = "ticketLink")]
-		public string TicketLink { get; set; } = null!;
+		public string TicketLink { get; set; } = string.Empty;
 
 		[DataMember(Name = "entityType")]
-		public string EntityType { get; set; } = null!;
+		public string EntityType { get; set; } = string.Empty;
 
 		[DataMember(Name = "entityId")]
-		public string EntityId { get; set; } = null!;
+		public string EntityId { get; set; } = string.Empty;
 
 		[DataMember(Name = "summary")]
-		public string Summary { get; set; } = null!;
+		public string Summary { get; set; } = string.Empty;
 
 		[DataMember(Name = "status")]
-		public string Status { get; set; } = null!;
+		public string Status { get; set; } = string.Empty;
 
 		[DataMember(Name = "priority")]
-		public string Priority { get; set; } = null!;
+		public Severity Priority { get; set; }
 	}
 }

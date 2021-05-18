@@ -5,7 +5,7 @@ namespace Errigal.Api.Data.Ticketer
 	[DataContract]
 	public class SendPortFaultRequest : FaultRequest
 	{
-		[DataMember(Name = "module")]
-		public Port Port { get; set; } = null!;
+		[DataMember(Name = "port")]
+		public Port Port { get; set; } = new();
 	}
 }

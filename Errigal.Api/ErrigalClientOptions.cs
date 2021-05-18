@@ -10,24 +10,24 @@ namespace Errigal.Api
 		/// <summary>
 		/// Server URL
 		/// </summary>
-		public string? Url { get; set; }
+		public string Url { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Username
 		/// </summary>
-		public string? Username { get; set; }
+		public string Username { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Password
 		/// </summary>
-		public string? Password { get; set; }
+		public string Password { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Validate the options
 		/// </summary>
 		public void Validate()
 		{
-			if (Url is null)
+			if (string.IsNullOrWhiteSpace(Url))
 			{
 				throw new ConfigurationException("Missing Url");
 			}

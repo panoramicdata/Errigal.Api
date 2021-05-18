@@ -6,6 +6,6 @@ namespace Errigal.Api.Data.Ticketer
 	public class CreateDeviceTicketRequest : CreateTicketRequest
 	{
 		[DataMember(Name = "device")]
-		public Device Device { get; set; } = null!;
+		public Device Device { get; set; } = new();
 	}
 }

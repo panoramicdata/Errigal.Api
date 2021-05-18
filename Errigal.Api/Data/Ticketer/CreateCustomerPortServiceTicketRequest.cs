@@ -6,6 +6,6 @@ namespace Errigal.Api.Data.Ticketer
 	public class CreateCustomerPortServiceTicketRequest : CreateTicketRequest
 	{
 		[DataMember(Name = "customer")]
-		public CustomerPortService Customer { get; set; } = null!;
+		public CustomerPortService Customer { get; set; } = new();
 	}
 }

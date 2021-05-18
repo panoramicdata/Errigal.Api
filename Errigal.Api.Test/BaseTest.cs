@@ -15,18 +15,21 @@ namespace Errigal.Api.Test
 
 			// Load config
 			var config = JsonConvert.DeserializeObject<TestConfiguration>(File.ReadAllText("../../../appsettings.json"));
+			if (config == null)
+			{
+				throw new System.Exception("Could not load test configuration");
+			}
 
+			// Set and validate the options
 			var options = new ErrigalClientOptions
 			{
 				Url = config.Url,
 				Username = config.Username,
 				Password = config.Password,
 			};
-			options.Validate();
 
 			// Create client
-			Client = new ErrigalClient(options,
-			Logger);
+			Client = new ErrigalClient(options, Logger);
 
 			// Store the username for test data
 			Username = config.Username!;

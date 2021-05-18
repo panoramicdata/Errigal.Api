@@ -7,48 +7,48 @@ namespace Errigal.Api.Data.Ticketer
 	public class PortService : IdentifiedItem
 	{
 		[DataMember(Name = "circuitId")]
-		public string CircuitId { get; set; } = null!;
+		public string CircuitId { get; set; } = string.Empty;
 
 		[DataMember(Name = "carrierCircuitId")]
-		public string CarrierCircuitId { get; set; } = null!;
+		public string CarrierCircuitId { get; set; } = string.Empty;
 
 		[DataMember(Name = "name")]
-		public string Name { get; set; } = null!;
+		public string Name { get; set; } = string.Empty;
 
 		[DataMember(Name = "type")]
-		public string Type { get; set; } = null!;
+		public string Type { get; set; } = string.Empty;
 
 		[DataMember(Name = "carrierName")]
-		public string CarrierName { get; set; } = null!;
+		public string CarrierName { get; set; } = string.Empty;
 
 		[DataMember(Name = "serviceClass")]
-		public string ServiceClass { get; set; } = null!;
+		public string ServiceClass { get; set; } = string.Empty;
 
 		[DataMember(Name = "aLocation")]
-		public string ALocation { get; set; } = null!;
+		public string ALocation { get; set; } = string.Empty;
 
 		[DataMember(Name = "zLocation")]
-		public string ZLocation { get; set; } = null!;
+		public string ZLocation { get; set; } = string.Empty;
 
 		[DataMember(Name = "aHours")]
-		public string AHours { get; set; } = null!;
+		public string AHours { get; set; } = string.Empty;
 
 		[DataMember(Name = "zHours")]
-		public string ZHours { get; set; } = null!;
+		public string ZHours { get; set; } = string.Empty;
 
 		[DataMember(Name = "aContact")]
-		public string AContact { get; set; } = null!;
+		public string AContact { get; set; } = string.Empty;
 
 		[DataMember(Name = "zContact")]
-		public string ZContact { get; set; } = null!;
+		public string ZContact { get; set; } = string.Empty;
 
 		[DataMember(Name = "carrierContact")]
-		public string CarrierContact { get; set; } = null!;
+		public string CarrierContact { get; set; } = string.Empty;
 
 		[DataMember(Name = "customer")]
-		public Customer Customer { get; set; } = null!;
+		public Customer Customer { get; set; } = new();
 
 		[DataMember(Name = "ports")]
-		public IList<ServicePort> Ports { get; set; } = null!;
+		public List<ServicePort> Ports { get; set; } = new();
 	}
 }

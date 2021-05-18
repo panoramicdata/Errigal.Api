@@ -10,9 +10,9 @@ namespace Errigal.Api.Data.Ticketer
 		public int Index { get; set; }
 
 		[DataMember(Name = "status")]
-		public string Status { get; set; } = null!;
+		public string Status { get; set; } = string.Empty;
 
 		[DataMember(Name = "services")]
-		public IList<CustomerService> Services { get; set; } = null!;
+		public List<CustomerService> Services { get; set; } = new();
 	}
 }

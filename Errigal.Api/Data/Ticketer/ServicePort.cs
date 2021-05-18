@@ -2,7 +2,6 @@
 
 namespace Errigal.Api.Data.Ticketer
 {
-
 	[DataContract]
 	public class ServicePort : NamedIdentifiedItem
 	{
@@ -10,9 +9,9 @@ namespace Errigal.Api.Data.Ticketer
 		public int Index { get; set; }
 
 		[DataMember(Name = "status")]
-		public string Status { get; set; } = null!;
+		public string Status { get; set; } = string.Empty;
 
 		[DataMember(Name = "module")]
-		public Module Module { get; set; } = null!;
+		public Module Module { get; set; } = new();
 	}
 }

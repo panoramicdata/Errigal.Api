@@ -6,6 +6,6 @@ namespace Errigal.Api.Data.Ticketer
 	public class SendModuleFaultRequest : FaultRequest
 	{
 		[DataMember(Name = "module")]
-		public Module Module { get; set; } = null!;
+		public Module Module { get; set; } = new();
 	}
 }

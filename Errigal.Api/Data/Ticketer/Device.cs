@@ -7,18 +7,18 @@ namespace Errigal.Api.Data.Ticketer
 	public class Device : NamedIdentifiedItem
 	{
 		[DataMember(Name = "type")]
-		public string Type { get; set; } = null!;
+		public string Type { get; set; } = string.Empty;
 
 		[DataMember(Name = "status")]
-		public string Status { get; set; } = null!;
+		public string Status { get; set; } = string.Empty;
 
 		[DataMember(Name = "ip")]
-		public string Ip { get; set; } = null!;
+		public string Ip { get; set; } = string.Empty;
 
 		[DataMember(Name = "networkArea")]
-		public string NetworkArea { get; set; } = null!;
+		public string NetworkArea { get; set; } = string.Empty;
 
 		[DataMember(Name = "modules")]
-		public IList<Module> Modules { get; set; } = null!;
+		public List<Module> Modules { get; set; } = new();
 	}
 }

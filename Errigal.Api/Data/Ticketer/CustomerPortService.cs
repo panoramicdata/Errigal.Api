@@ -6,6 +6,6 @@ namespace Errigal.Api.Data.Ticketer
 	public class CustomerPortService : Customer
 	{
 		[DataMember(Name = "services")]
-		public IList<PortService> Services { get; set; } = null!;
+		public List<PortService> Services { get; set; } = new();
 	}
 }

@@ -6,12 +6,12 @@ namespace Errigal.Api.Data.Ticketer
 	public abstract class CreateTicketRequest
 	{
 		[DataMember(Name = "user")]
-		public string User { get; set; } = null!;
+		public string User { get; set; } = string.Empty;
 
 		[DataMember(Name = "severity")]
-		public string Severity { get; set; } = null!;
+		public string Severity { get; set; } = string.Empty;
 
 		[DataMember(Name = "ticketType")]
-		public string TicketType { get; set; } = null!;
+		public string TicketType { get; set; } = string.Empty;
 	}
 }

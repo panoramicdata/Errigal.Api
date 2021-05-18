@@ -6,6 +6,6 @@ namespace Errigal.Api.Data
 	public abstract class NamedIdentifiedItem : IdentifiedItem
 	{
 		[DataMember(Name = "name")]
-		public string Name { get; set; } = null!;
+		public string Name { get; set; } = string.Empty;
 	}
 }
