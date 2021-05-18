@@ -7,7 +7,7 @@
 		<Nullable>enable</Nullable>
 		<Authors>Panoramic Data Limited</Authors>
 		<Description>A nuget package for interacting with the Errigal API.</Description>
-		<Copyright>Panoramic Data Limited 2020</Copyright>
+		<Copyright>Panoramic Data Limited 2021</Copyright>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/panoramicdata/Errigal.Api</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/panoramicdata/Errigal.Api</RepositoryUrl>
