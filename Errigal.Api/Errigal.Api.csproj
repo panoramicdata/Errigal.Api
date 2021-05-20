@@ -16,7 +16,7 @@
 		<PackageIcon>Icon.png</PackageIcon>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 
-		<PackageReleaseNotes>Initial alpha release</PackageReleaseNotes>
+		<PackageReleaseNotes>Moved from IList to List to allow easier consumption</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>

@@ -78,7 +78,7 @@ namespace Errigal.Api.Interfaces
 			);
 
 		[Post("/adapter/netace/in/ticket/related")]
-		Task<IList<TicketResponse>> GetRelatedTicketsAsync(
+		Task<List<TicketResponse>> GetRelatedTicketsAsync(
 			GetRelatedTicketsRequest request,
 			CancellationToken cancellationToken = default
 			);

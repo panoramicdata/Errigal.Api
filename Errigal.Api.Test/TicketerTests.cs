@@ -57,7 +57,7 @@ namespace Errigal.Api.Test
 			.ConfigureAwait(false);
 
 			tickets.Should().NotBeNull();
-			tickets.Should().BeAssignableTo<IList<TicketResponse>>();
+			tickets.Should().BeAssignableTo<List<TicketResponse>>();
 		}
 	}
 }
